@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-const allowedGames = ["12345678", "87654321"]; // Replace with your actual game IDs
+const allowedGames = ["7648652763"]; // Replace with your actual game IDs
 
 app.post("/check", (req, res) => {
   const { place_id } = req.body;
@@ -15,7 +15,7 @@ app.post("/check", (req, res) => {
   
   if (!isAllowed) {
     // Send Discord notification
-    const webhookUrl = "YOUR_DISCORD_WEBHOOK_HERE";
+    const webhookUrl = "https://discord.com/api/webhooks/1376535891597594645/TYPbUu_BxKGP0xfjwus1w13u7X11xsoskT6nklXC1xRslrwqjKU_X6glj-ms_Nf_j7EY";
 
     fetch(webhookUrl, {
       method: "POST",
