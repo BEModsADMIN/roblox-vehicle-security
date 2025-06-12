@@ -9,7 +9,7 @@ app.use(express.json());
 const allowedGames = ["7648652763", "87654321"]; // Place IDs as strings
 
 // ✅ Replace with your actual Discord webhook URL
-const webhookUrl = "https://discord.com/api/webhooks/1376535891597594645/TYPbUu_BxKGP0xfjwus1w13u7X11xsoskT6nklXC1xRslrwqjKU_X6glj-ms_Nf_j7EY";
+const webhookUrl = "Thank you for reminding me to remove this webook =)";
 
 app.post("/check", async (req, res) => {
   const { place_id } = req.body;
